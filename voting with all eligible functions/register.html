@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTE | VOTING</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- Navbar  Section Start -->
+<header>
+    <a href="#" class="logo">VO<span>T</span>ER</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="https://github.com/Guna-Pandi?tab=repositories"><i class='bx bxl-github'></i></a></li>
+        <li><a href="https://github.com/Guna-Pandi?tab=repositories"><i class='bx bxl-instagram'></i></a></li>
+        <li><a href="https://github.com/Guna-Pandi?tab=repositories"><i class='bx bxl-facebook'></i></a></li>
+        <li><a href="https://github.com/Guna-Pandi?tab=repositories"><i class='bx bxl-gmail'></i></a></li>
+    </ul>
+</header>
+<!-- Navbar Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact" id="register">
+    <div class="heading">
+        <h2>YOUR DETAILS</h2>
+        <span>Fill all the boxes !</span>
+    </div>
+    <div class="contact-form">
+        <form id="form">
+            <input type="text" placeholder="Your Name" id="name" >
+            <input type="date" placeholder="date Of Birth" id="dob" >
+            <!-- age  successfull submission-->
+            <div class="eligible" id="eli-submission">
+                <div>
+                <span class="eli-success"> YOU ARE ELIGIBLE FOR VOTING !</span>
+            </div>
+            </div>
+             <!-- age failed submission-->
+             <div class="eligible" id="neli-submission" >
+                <div>
+                <span class="neli-failure" > YOU ARE NOT ELIGIBLE FOR VOTING !</span>
+            </div>
+             </div>
+            <div class="select-radio">
+                <label for="male">Male</label>
+                <input class="three-dot" type="radio" id="male" name="gender" value="male"  >
+                <label for="female">Female</label>
+                <input class="three-dot"type="radio" id="female" name="gender" value="female">
+                <label for="other">Other</label>
+                <input class="three-dot"type="radio" id="other" name="gender" value="other">
+            </div>
+            <input type="text" placeholder="Enter Your Place" id="Pname" >
+            <input type="text" id="adharno" placeholder="Enter your Adhar number" >
+            <input type="password" id="password" placeholder="Create a password" required >
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            <input  type="submit" value="Vote" class="contact-button" id="submitBtn" onclick="message()">
+            <div class="error" id="errorMessage"></div>
+            <div class="pass-msg" id="passMessage"></div>
+            </form>
+            <!--successfull submission-->
+<div class="hidden" id="success-submission">
+    <div>
+    <span class="success"> YOUR VOTE ADDED SUCCESSFULLY !</span>
+</div>
+</div>
+ <!--failed submission-->
+ <div class="hidden" id="fail-submission" >
+    <div>
+    <span class="failure" > VOTING FAILED !</span>
+</div>
+</div>
+            
+        </div>                           
+</section>
+<script src="function.js"></script>
+</body>
+</html>
